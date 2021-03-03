@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>JS Kütüphane Uygulaması</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
+    
+    <style>
+        .success, .error {
+          color: white;
+          padding: 5px;
+          margin: 5px 0 15px 0;
+        }
+    
+        .success {
+          background: green;
+        }
+    
+        .error {
+          background: red;
+        }
+      </style>
+</head>
+<body>
+<div class="container">
+    <h3 class="baslik">KİTAP EKLEME FORMU</h3>
+    <form id="formKitap">
+
+        <label for="txtKitapAdi">Kitap adı:</label>
+        <input type="text" name="" id="txtKitapAdi">
+        <label for="txtKitapYazari">Kitap yazarı:</label>
+        <input type="text" name="" id="txtKitapYazari">
+        <label for="txtKitapISBN">ISBN No:</label>
+        <input type="text" name="" id="txtKitapISBN">
+
+        <input type="submit" value="Kitap Ekle" id="btnEkle">
+    </form>
+
+    <span>
+        <table id="kitapListesi">
+            <tr>
+                <th>Kitap Adı</th>
+                <th>Kitap Yazarı</th>
+                <th>ISBN No</th>
+                <th></th>
+            </tr>
+            <!-- Buraya yeni bir satır(tr) ve içine kitap adı,yazar ve isbn hücreleri(td) gelecek-->
+        </table>
+    </span>
+    <h5 id="sonuc">Henüz hiç bir kitap eklemediniz!</h5>
+</div>
+<script src='script.js'></script>
+</body>
+</html>
